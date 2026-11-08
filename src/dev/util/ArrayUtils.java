@@ -13,4 +13,5 @@ public class ArrayUtils {
         for(int element : intArray) min = (min > element) ? element : min;
         return min;
     }
+
 }

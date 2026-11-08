@@ -20,7 +20,7 @@ public class Problem35 {
             switch(option) {
                 case 1 -> {
                     // option = 1
-                    if(productCount == MAX_PRODUCT_COUNT) {
+                    if(productCount >= MAX_PRODUCT_COUNT) {
                         System.out.println("상품 등록이 더이상 불가능합니다.");
                         System.out.printf("최대 등록 가능 개수 %d개 (현재 등록 상품 수 : %d개)\n", MAX_PRODUCT_COUNT, productCount);
                         break;
@@ -37,6 +37,7 @@ public class Problem35 {
                 }
                 case 2 -> {
                     // option = 2
+                    if(productCount == 0) System.out.println("등록된 상품이 없습니다.");
                     for(int i=0; i<productCount; i++) System.out.println((i+1) +
                             "번째 상품 - 이름 : " + productNames[i] + " / 가격 : " + productPrices[i]);
                 }
