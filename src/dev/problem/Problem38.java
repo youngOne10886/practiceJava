@@ -1,4 +1,4 @@
-package dev.problem.problem38;
+package dev.problem;
 
 import java.util.Optional;
 

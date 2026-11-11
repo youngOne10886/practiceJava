@@ -49,6 +49,7 @@ public class Transaction_a {
         else this.message += "오류로 인해 거래가 취소되었습니다. ";
         this.message += "잔액 : " + this.account.getBalance() + "원\n";
         this.account.addLog(this.message);
+
     }
     @Override
     public String toString() {
